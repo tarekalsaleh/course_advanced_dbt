@@ -1,29 +1,22 @@
 models:
-  - name: stg_bingeflix_events
-    description: "{{ doc('table_events') }}"
+  - name: fct_events
+    description: This model contains information about Bingeflix events.
+    meta:
+      priority: high
     columns:
       - name: session_id
-        description: '{{ doc("session_id") }}'
-        tests:
-          - not_null
-
-      - name: created_at
-        description: '{{ doc("events_created_at") }}'
-        tests:
-          - not_null
-
-      - name: user_id
-        description: '{{ doc("bingeflix_user_id") }}'
-        tests:
-          - not_null
-
-      - name: event_name
-        description: '{{ doc("event_name") }}'
-        tests:
-          - not_null
-
-      - name: event_id
-        description: '{{ doc("event_id") }}'
         tests:
           - not_null
           - unique
+
+      - name: created_at
+        description: '{{ doc("events_created_at") }}'
+
+      - name: user_id
+        description: '{{ doc("bingeflix_user_id") }}'
+
+      - name: event_name
+        description: '{{ doc("event_name") }}'
+
+      - name: event_id
+        description: '{{ doc("event_id") }}'
