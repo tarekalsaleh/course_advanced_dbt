@@ -5,7 +5,7 @@ This file contains docs blocks for Bingeflix sources
 This section contains documentation from the Bingeflix Users table.
 
 {% docs bingeflix_user_id %}
-The unique identifier of the Bingeflix user. A user is created when..
+The unique identifier of the Bingeflix user. A user is created when.
 {% enddocs %}
 
 {% docs created_at %}
@@ -102,4 +102,3 @@ This section contains documentation from the Bingeflix subscriptions table.
 {% docs subscription_id %}
  The unique identifier for the subscription.
 {% enddocs %}
-

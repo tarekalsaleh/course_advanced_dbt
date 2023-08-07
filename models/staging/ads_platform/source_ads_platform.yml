@@ -28,4 +28,3 @@ sources:
             description: '{{ doc("ctr") }}'
             tests:
               - not_null
-
