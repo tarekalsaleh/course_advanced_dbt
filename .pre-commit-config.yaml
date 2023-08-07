@@ -23,8 +23,7 @@ repos:
   rev: v1.1.1
   hooks:
   - id: dbt-compile # Compiles dbt (necessary for future hooks)
-    args: [“-—cmd-flags”, “++project-dir”, “course_advanced_dbt”, “++target-path”, “course_advanced_dbt/target”, “-—“]
-  # - id: dbt-docs-generate # Generates the dbt docs (necessary for some future hooks)
+  - id: dbt-docs-generate # Generates the dbt docs (necessary for some future hooks)
   - id: check-source-table-has-description # Ensures all source tables have descriptions
   - id: check-model-has-tests # Ensures all models have at least 2 tests
     args: ["--test-cnt", "2", "--"]
