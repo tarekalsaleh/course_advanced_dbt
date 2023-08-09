@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: truncate_date
+    description: extract date component from date field
+    arguments:
+      - name: date_col
+        type: date
+        description: The name of the date column you want to extract the date part from
+      - name: date_part
+        type: string
+        description: The date part to be extracted such as month,day,year...etc
