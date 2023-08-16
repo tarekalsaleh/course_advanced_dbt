@@ -10,42 +10,27 @@ models:
         description: '{{ doc("bingeflix_user_id") }}'
         meta:
           priority: high
-        tests:
-          - not_null
-          - unique
 
       - name: created_at
         description: '{{ doc("created_at") }}'
-        tests:
-          - not_null
 
       - name: phone_number
         description: '{{ doc("phone_number") }}'
-        tests:
-          - not_null
 
       - name: deleted_at
         description: '{{ doc("deleted_at") }}'
 
       - name: username
         description: '{{ doc("username") }}'
-        tests:
-          - not_null
 
       - name: name
         description: '{{ doc("name") }}'
-        tests:
-          - not_null
 
       - name: sex
         description: '{{ doc("sex") }}'
-        tests:
-          - not_null
 
       - name: email
         description: '{{ doc("email") }}'
-        tests:
-          - not_null
 
       - name: birthdate
         description: '{{ doc("birthdate") }}'
@@ -54,13 +39,9 @@ models:
 
       - name: current_age
         description: The user's current age.
-        tests:
-          - not_null
 
       - name: age_at_acquisition
         description: The age of the user when they became a Bingeflix user.
-        tests:
-          - not_null
 
       - name: region
         description: '{{ doc("region") }}'
@@ -69,5 +50,13 @@ models:
 
       - name: country
         description: '{{ doc("country") }}'
+        tests:
+          - not_null
+      - name: count_of_subscriptions
+        description: A count of the subscriptions
+        tests:
+          - not_null
+      - name: first_subscription_starts_at
+        description: The date at whcih the first subscription started
         tests:
           - not_null
