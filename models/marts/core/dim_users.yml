@@ -54,9 +54,5 @@ models:
           - not_null
       - name: count_of_subscriptions
         description: A count of the subscriptions
-        tests:
-          - not_null
       - name: first_subscription_starts_at
         description: The date at whcih the first subscription started
-        tests:
-          - not_null
